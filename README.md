@@ -1,7 +1,7 @@
 # Entegable 2.
 ### Descripción
 
-En este repositorio se encontraran los Temas relacionados a semana 3, 4, 5 y 6
+En este repositorio se encuentran los temas relacionados a las semanas 3, 4, 5 y 6.
 + Javascript
 + Angular
 + NodeJS
