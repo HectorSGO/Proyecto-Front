@@ -1,0 +1,81 @@
+<div class="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6" class="navbar">
+    <div class="navbar__container">
+        <div class="navbar__logo">
+            <a href="https://pokemongolive.com/?hl=es_MX" target="_blank">
+                <img class="image" decoding="async" loading="lazy"
+                    src="https://lh3.googleusercontent.com/3TSaKxXGo2wT0lu0AyNUBnkk6wkCC2AzOhJyy3JXIPm-AmZ1k9DSAroWeBUyePswCZSs5lVp3mPF7HzUpY9VPlyOV5eddITONINr3WSqLNLm=e365-w512"
+                    alt="Pokémon GO" width="100" height="60">
+            </a>
+        </div>
+        <div style="text-align: center">
+            <div class="navbar__links" role="nav">
+                <a class="navbar__link" href="https://niantic.helpshift.com/a/pokemon-go/?p=web&amp;l=es-MX" target="_blank">
+                    AYUDA
+                </a>
+            </div>
+        </div>
+    </div>
+    <h1></h1>
+    <div class=" border-t border-gray-200 bg-white px-4 py-3 sm:px-6" style="text-align: center">
+        <mat-card>
+            <mat-card-title style="color: black;"> Iniciar sesion.</mat-card-title>
+            <h1></h1>
+            <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+                <div>
+                    <mat-form-field appearance="fill">
+                        <label for="username" style="color: black;">Usuario</label>
+                        <input type="text" id="username" formControlName="username" matInput
+                            placeholder="pat@example.com">
+                        <mat-error> Campo requerido.</mat-error>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field appearance="fill">
+                        <label for="username" style="color: black;">Contraseña</label>
+                        <input type="text" id="password" formControlName="password" matInput placeholder="*********">
+                        <mat-error> Campo requerido.</mat-error>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <h1></h1>
+                    <button mat-stroked-button color="primary" type="submit">Iniciar sesion</button>
+                    <h1></h1>
+                </div>
+            </form>
+        </mat-card>
+        <h1></h1>
+        <div style="color: black;" class="headersimple__content__title">Noticias
+            <div class="blogList">
+                <div class="blogList__grid grid">
+                    <div class="blogList__posts">
+                        <a href="https://pokemongolive.com/post/a-valorous-hero?hl=es_MX" target="_blank"
+                            class="blogList__post">
+                            <div class="blogList__post__image">
+                                <img class="image" decoding="async" loading="lazy"
+                                    src="https://lh3.googleusercontent.com/VZfrKsPFtbGQaQTDDQmRINR7qCWU2bsBsNl9Tapm62B4nyf75MVsVVUEC0D4mj0R7SO4yp4rXiRgCKsnW1DeyIWHNLcCzDYsFoRJS20oySIt=e365-w800"
+                                    alt="" width="1920" height="1080">
+                            </div>
+                            <div class="blogList__post__content">
+                                <div class="blogList__post__content__date">6 de mayo de 2023</div>
+                                <div class="blogList__post__content__title">
+                                    ¡Entrenadores! Ayuden a Candela durante el próximo evento Heroicidad con valor
+                                </div>
+                            </div>
+                        </a>
+                        <h1></h1>
+                        <a href="https://pokemongolive.com/post/an-instinctive-hero?hl=es_MX" target="_blank"
+                            class="blogList__post">
+                            <div class="blogList__post__image">
+                                <img class="image" decoding="async" loading="lazy"
+                                    src="https://lh3.googleusercontent.com/8PAXdFEaUtLVipdit7_N-2xAbiEy-KGrC5lNjNlR65vwL7UkMxb4Y9BsUs64Z7OuvHMs1gdrGNAwWCZl8mZcE0-ozjrQ_tpVQOQiUHOEYSdG=e365-w800"
+                                    alt="" width="1920" height="1080">
+                            </div>
+                            <div class="blogList__post__content">
+                                <div class="blogList__post__content__date">11 de mayo de 2023</div>
+                                <div class="blogList__post__content__title">
+                                    ¡Entrenadores, ayuden a Chispa en el evento Heroicidad instintiva!
+                                </div>
+                            </div>
+                        </a>
+                        <h1></h1>
+                    </div>

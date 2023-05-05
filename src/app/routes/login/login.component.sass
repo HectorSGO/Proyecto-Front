@@ -1,0 +1,79 @@
+
+.blogList__post__image
+    height: 100%
+    position: relative
+
+.blogList__post 
+    display: grid
+    grid-template-columns: 250px 1fr
+
+.blogList__post 
+    background: #fff
+    border-radius: 20px
+    overflow: hidden
+    box-shadow: 1px 5px 10px 4px rgba(0,0,0,.2)
+    display: block
+
+.blogList__post__content__date 
+    font-weight: 700
+    font-size: 16px
+    line-height: 21px
+    margin-bottom: 4px
+
+.blogList__post__content__title 
+    font-size: 30px
+    line-height: 1.4
+
+
+.blogList__post__content__title 
+    font-weight: 700
+
+
+
+.blogList__post__content 
+    align-self: center
+    padding: 40px
+
+.blogList__post__content 
+    color: #000
+    padding: 40px 24px
+
+.grid 
+    --grid-column-gap: 24px
+    display: grid
+    grid-template-columns: repeat(var(--grid-num-columns), 1fr)
+    -moz-column-gap: var(--grid-column-gap)
+    column-gap: var(--grid-column-gap)
+    padding-left: var(--grid-padding)
+    padding-right: var(--grid-padding)
+
+.navbar__container 
+    padding: 0 24px
+    max-width: 1728px
+    margin: 0 auto
+
+.navbar__container 
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 100%
+
+.navbar__links 
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 12px
+
+.navbar__link
+    display: block
+    padding: 4px 16px
+    font-size: 12px
+    line-height: 1.3
+    letter-spacing: 1.5px
+    border: 2px solid rgba(0,0,0,0)
+    color: #fff
+    border-radius: 999px
+    text-transform: uppercase
+    white-space: nowrap
+    transition: border .3s ease

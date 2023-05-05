@@ -1,0 +1,60 @@
+<div class="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6" class="navbar">
+    <div class="navbar__container">
+        <div class="navbar__logo">
+            <a href="https://pokemongolive.com/?hl=es_MX" target="_blank">
+                <img class="image" decoding="async" loading="lazy"
+                    src="https://lh3.googleusercontent.com/3TSaKxXGo2wT0lu0AyNUBnkk6wkCC2AzOhJyy3JXIPm-AmZ1k9DSAroWeBUyePswCZSs5lVp3mPF7HzUpY9VPlyOV5eddITONINr3WSqLNLm=e365-w512"
+                    alt="Pokémon GO" width="100" height="60">
+            </a>
+        </div>
+        <div style="text-align: center">
+            <div class="navbar__links" role="nav">
+                <a class="navbar__link" href="https://pokemongolive.com/events?hl=es_MX" target="_blank">
+                    EVENTOS
+                </a>
+                <a class="navbar__link" href="https://pokemongolive.com/news?hl=es_MX" target="_blank">
+                    NOTICIAS
+                </a>
+            </div>
+        </div>
+    </div>
+    <h1></h1>
+    <div class=" border-t border-gray-200 bg-white px-4 py-3 sm:px-6">
+        <mat-toolbar>
+            <mat-toolbar-row>
+                <span>¿Ya tienes todas tus cartas Pokémon?</span>
+            </mat-toolbar-row>
+        </mat-toolbar>
+    </div>
+    <h1></h1>
+    <form style="text-align: center" [formGroup]="searchFormControl">
+        <mat-form-field appearance="fill">
+            <mat-label> Buscar </mat-label>
+            <input type="text" placeholder="Mas vendida" aria-label="Number" matInput formControlName="cardOne">
+        </mat-form-field>
+    </form>
+    <div *ngIf="loading">
+        <mat-progress-bar mode="query"></mat-progress-bar>
+    </div>
+    <h1></h1>
+    <div class="flex flex-wrap border-t border-gray-200 bg-white px-4 py-3 sm:px-6" *ngIf="!loading">
+        <div *ngFor="let card of cards" class="w-full sm:w-1/2 lg:w-1/5 text-center">
+            <div class="text-xl tracking-tight text-black sm:text-xl">
+                Pokémon: <b>{{card.name}}</b>
+            </div>
+            <div class="flex flex-col justificar-centro artículos-centro">
+                <img [src]="card.images.small" class="p-7">
+            </div>
+            <a href="{{card.cardmarket.url}}" target="_blank">
+                <button mat-raised-button color="accent">COMPRAR</button>
+            </a>
+            <h1></h1>
+        </div>
+    </div>
+
+    <div class=" border-t border-gray-200 bg-white px-4 py-3 sm:px-6 " style="text-align: center">
+        <button mat-raised-button color="accent" type="submit" (click)="paginaAnterior()">Pagina anterior</button>
+        &nbsp;
+        <button class="menu" mat-raised-button color="accent" type="submit" (click)="paginaSiguiente()">Pagina
+            Siguiente</button>
+    </div>
