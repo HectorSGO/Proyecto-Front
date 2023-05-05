@@ -36,3 +36,11 @@ En este repositorio se encuentran los temas relacionados a las semanas 3, 4, 5 y
 }
 
 + http://localhost:4200/home
+
+## Resultados
+
++ https://raw.githubusercontent.com/HectorSGO/Proyecto-Front/main/src/assets/images/1.png
++ https://raw.githubusercontent.com/HectorSGO/Proyecto-Front/main/src/assets/images/2.png
++ https://raw.githubusercontent.com/HectorSGO/Proyecto-Front/main/src/assets/images/3.png
++ https://raw.githubusercontent.com/HectorSGO/Proyecto-Front/main/src/assets/images/4.png
++ https://raw.githubusercontent.com/HectorSGO/Proyecto-Front/main/src/assets/images/5.png
